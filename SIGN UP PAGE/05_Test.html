@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 15px 0;
+            padding: 0;
+        }
+
+        #container {
+            border: 2px solid #0552ec;
+            border-radius: 30px;
+            width: 500px;
+            height: 900pxpx;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 10px 5px 10px 5px rgba(7, 51, 225, 0.2);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 440px;
+            padding: 10px 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #state {
+            padding: 8px;
+            border-radius: 10px;
+            margin: 10px 0;
+            width: 200px;
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url('arrow-down.png') no-repeat right center;
+            background-size: 20px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .terms-condition {
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>SignUp</h1>
+        <form action="submit" method="post">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+            </br>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            </br>
+            <label for="email">Email:</label></br>
+            <input type="email" id="email" name="email" required>
+            </br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </br>
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+            </br>
+            <label for="gender">Gender:</label></br>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            </br>
+            <!-- <label for="state">State:</label>
+            <input list="states" id="state" name="state" required>
+            <datalist id="states">
+                <option value="Bihar">
+                <option value="Punjab">
+                <option value="Jharkhand">
+                <option value="Rajsthan">
+                <option value="Andhra Pradesh">
+                <option value="Other">
+            </datalist></br></br>
+
+            <label for="bio">Bio:</label></br>
+            <textarea id="bio" name="bio" rows="4" cols="50"></textarea> -->
+
+            <div class="terms-condition">
+                <label for="agree_terms">
+                    <input type="checkbox" id="agree_terms" name="agree_terms" required>
+                    I agree to the terms and conditions
+                </label>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>

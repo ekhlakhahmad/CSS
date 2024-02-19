@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #bec4cc;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+.container form .display input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 16px;
+    outline: none;
+    
+}
+.container form .digits input{
+    width: 40px ;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+.container form .digits .equal{
+    width: 95px;
+    font-weight: bold;
+}
+.container form .digits input:hover{
+    background-color: #808e9b;
+}
