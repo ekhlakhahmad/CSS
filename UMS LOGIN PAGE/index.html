@@ -1,35 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UMS Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="main-container">
         <div class="image">
+            <div id="particles-js"></div>
             <img src="https://files.lpu.in//umsweb//Events//umseventAssets//convocation.png" alt="">
         </div>
-        <div class="form-container">
+        <div class="container">
             <div class="logo">
-                <div class="logo1">1</div>
-                <div class="logo2">2</div>
+                <div class="logo1">
+                    <img src="https://ums.lpu.in/lpuums/assets/login/img/logos/seal.svg" alt="lpu">
+                </div>
+                <div class="logo2">
+                    <img src="https://ums.lpu.in/lpuums/assets/login/img/logos/ums_logo1.svg" alt="ums">
+                </div>
             </div>
-            <form action="">
-                <label for="Login">Login </label>
-                <select class="input-box1">
-                    <option value="headoffice">HeadOffice</option>
-                </select><br>
-                <input type="text" placeholder="User ID" class="input-box"><br>
-                <input type="password" placeholder="password" class="input-box"><br>
-                <select class="input-box">
-                    <option>Dashboard</option>
-                </select>
-                <p>Forgot your password?</p><br>
+            <form class="form-container">
+                <div class="logBtn">
+                    <label for="Login">Login </label>
+                    <select>
+                        <option value="headoffice">HeadOffice</option>
+                        <option value="headoffice">bhutan</option>
+                        <option value="headoffice">Jammu</option>
+                        <option value="headoffice">Nepal</option>
+                        <option value="headoffice">Haryana</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="User ID"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                        height="1em" viewBox="0 0 24 24">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="password">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M6 20V10h12v3.09c.33-.05.66-.09 1-.09c.34 0 .67.04 1 .09V10a2 2 0 0 0-2-2h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.11 0-2 .89-2 2v10a2 2 0 0 0 2 2h7.81c-.35-.61-.59-1.28-.72-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9zm5 9c0 1.11-.89 2-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2a2 2 0 0 1 2 2m9 3v2h-3v3h-2v-3h-3v-2h3v-3h2v3z" />
+                    </svg>
+                </div>
+                <p>Forgot your password?</p>
                 <button class="loginBtn">Login</button>
             </form>
+            <div class="footer-side">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 18.2V18H4V8l8 5l8-5v3.44c.81.36 1.5.92 2 1.62V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h8zM20 6l-8 5l-8-5zm.8 11v-1.5c0-1.4-1.4-2.5-2.8-2.5s-2.8 1.1-2.8 2.5V17c-.6 0-1.2.6-1.2 1.2v3.5c0 .7.6 1.3 1.2 1.3h5.5c.7 0 1.3-.6 1.3-1.2v-3.5c0-.7-.6-1.3-1.2-1.3m-1.3 0h-3v-1.5c0-.8.7-1.3 1.5-1.3s1.5.5 1.5 1.3z" />
+                    </svg>
+                </div>
+                <p>student Mail</p>
+            </div>
         </div>
     </div>
+    <script src="app.js"></script>
+    <script>
+        function stars() {
+            let count = 300;
+            let scene = document.querySelector('#particles-js');
+            let parent = scene.parentElement;
+            let parentWidth = parent.clientWidth;
+            let parentHeight = parent.clientHeight;
+            let i = 0;
+            while (i < count) {
+                let star = document.createElement("i");
+                let x = Math.floor(Math.random() * parentWidth);
+                let y = Math.floor(Math.random() * parentHeight);
+                let duration = Math.random() * 5;
+                let size = Math.random() * 2;
+
+                star.style.left = x + 'px';
+                star.style.top = y + 'px';
+                star.style.width = 1 + size + 'px';
+                star.style.height = 1 + size + 'px';
+
+                star.style.animationDuration = 3 + duration + 's';
+                star.style.animationDelay = duration + 's';
+                scene.appendChild(star);
+                i++;
+            }
+        }
+        stars();
+    </script>
 </body>
+
 </html>
