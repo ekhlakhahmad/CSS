@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f5f9;
+    padding: 0 10px;
+}
+header .left-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+header .left-side img{
+    width: 50px;
+}
+.left-side .textLogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .right-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+header .right-side .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header .right-side img{
+    width: 50px;
+    border-radius: 50%;
+}
+#hero-section{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+}
+#hero-section .four{
+    font-size: 24px;
+    font-weight: 800;
+    color: #ef5052;
+}
+#hero-section .today{
+    font-weight: bold;
+}
+#hero-section .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#hero-section .right p i{
+    color: red;
+    font-size: 32px;
+    font-weight: 600;
+}
+#hero-section .right a{
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: #ea580c;
+    padding: 10px 20px;
+    color: #fff;
+}
+#hero-section .right p{
+    font-weight: bold;
+}
+#body-section{
+    width: 100%;
+    background-color: #f1f5f9;
+    padding: 10px 150px;
+}
+.attendance{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.attendance .atten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+.mark{
+    position: absolute;
+    top: -50px;
+    padding: 15px;
+    background-color: #f1f5f9;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.attendance .atten input{
+    width: 220px;
+    height: 35px;
+    padding: 8px;
+    font-size: 16px;
+}
+.attendance .legend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.attendance .legend .ordot{
+    font-size: 16px;
+    color: orange;
+}
+.attendance .legend .rddot{
+    font-size: 16px;
+    color: red;
+}
+.attendance .legend .gndot{
+    font-size: 16px;
+    color: green;
+}
+.gndot{
+    color: green;
+}
+.ordot{
+    color: orange;
+}
+.btn-section{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin: 20px 0;
+}
+.btn-section button{
+    height: 30px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: blue;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border: none;
+    font-weight: 600;
+}
+.box-section{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-section .box{
+    width: 32%;
+    height: 60px;
+    padding: 10px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+}
+.box-section .box1{
+    color: orange;
+}
+.box-section .box2{
+    color: #22c55e;
+}
+.box-section .box3{
+    color: brown;
+}
+.box-section .box span{
+    font-size: 22px;
+    font-weight: 800;
+}
+.classes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.classes .timeTable{
+    width: 24%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.classes .timeTable:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+}
+.classes .timeTable .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.classes .timeTable .top p{
+    border-radius: 20px;
+    background-color: #dae9fd;
+    padding: 3px 10px;
+}
+.classes .timeTable .mid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+.classes .timeTable .mid a{
+    text-decoration: none;
+}
+.classes .timeTable .down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+#lastview a{
+    border: 2px solid orange;
+    color: orange;
+}
+.classes .timeTable .down a{
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid #22c55e;
+    border-radius: 20px;
+    color: #22c55e;
+}
