@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(77, 75, 75);
+}
+body{
+    background-color: #f3e5d8;
+}
+.container{
+    width: 600px;
+    height: auto;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.hero p{
+    font-family: sans-serif;
+    font-size: 13px;
+}
+h1{
+    margin-block: 10px;
+    font-size: 40px;
+}
+header img{
+    width: 100%;
+    border-radius: 20px;
+}
+.prepartion{
+    padding: 5px;
+    border-radius: 8px;
+    margin-block: 20px;
+    background-color: #ffabe049;
+    font-family: sans-serif;
+}
+li::marker{
+    color: brown;
+}
+.prepartion h2{
+    color: brown;
+}
+.prepartion ul {
+    padding-left: 40px;
+}
+.prepartion ul li{
+    padding: 3px;
+    border-radius: 10px;
+}
+.prepartion span{
+    font-weight: bold;
+}
+.inter{
+    padding: 5px;
+}
+.inter h2{
+    color: brown;
+}
+.inter ul {
+    padding-left: 40px;
+    font-family: sans-serif;
+}
+.inter ul li{
+    padding: 3px;
+}
+.intructions{
+    padding: 10px;
+}
+.intructions ol{
+    font-family: sans-serif;
+    padding-left: 20px;
+}
+.intructions ol li{
+    margin-bottom: 10px;
+}
+.intructions span{
+    font-weight: bold;
+}
+.intructions h2{
+    color: brown;
+}
+.nutrition h2{
+    color: brown;
+    margin-bottom: 10px;
+}
+.nutrition table{
+    font-family: sans-serif;
+    width: 100%;
+    padding: 10px;
+}
+.nutrition table td{
+    border-bottom: 0.1px solid #e7e6e6;
+    padding: 10px;
+}
+.nutrition table span{
+    color: brown;
+    font-weight: bold;
+}
