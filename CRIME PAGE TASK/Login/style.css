@@ -1,0 +1,127 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: system-ui, "Segoe UI", Roboto, "Open Sans", "Helvetica Neue",
+		sans-serif;
+}
+
+.container {
+	/* background-image: url(./loginbg.jpg);
+	background-repeat: no-repeat; */
+	/* background-size: cover; */
+	/* filter: blur(10px); */
+	background-color: #081c99;
+	backdrop-filter: blur(18px);
+	height: 100vh;
+	&::after {
+		content: "";
+		background-color: #071785;
+		height: 200px;
+		width: 200px;
+		filter: blur(5px);
+		border-radius: 50%;
+		z-index: -1;
+		position: absolute;
+		top: 10%;
+		left: 35%;
+		animation: floating 3s linear infinite alternate;
+	}
+	&::before {
+		content: "";
+		background-color: #071785;
+		filter: blur(5px);
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+		z-index: -1;
+		position: absolute;
+		top: 61%;
+		left: 52%;
+		animation: float 3s linear infinite alternate;
+	}
+}
+@keyframes floating {
+	0% {
+		top: 10%;
+	}
+	100% {
+		top: 30%;
+	}
+}
+@keyframes float {
+	0% {
+		top: 61%;
+	}
+	100% {
+		top: 30%;
+	}
+}
+.card {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	width: 400px;
+	height: 500px;
+	backdrop-filter: blur(18px) saturate(154%);
+	-webkit-backdrop-filter: blur(18px) saturate(154%);
+	background-color: rgba(51, 111, 149, 0.29);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	padding: 10px 50px;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	input[type="text"],
+	input[type="password"] {
+		width: 100%;
+		padding: 10px;
+		border: none;
+		outline: none;
+		background: transparent;
+        caret-color: #737171;
+		&::placeholder {
+			font-size: 20px;
+		}
+        
+	}
+	input[type="submit"] {
+		padding: 10px 20px;
+		border-radius: 10px;
+		font-size: 20px;
+		border: 2px solid #03126d;
+		outline: none;
+		cursor: pointer;
+		color: white;
+		background: transparent;
+        transition: all 0.3s ease-in;
+		&:hover {
+			background-color: #071785;
+		}
+	}
+}
+.inputtext {
+	display: flex;
+	align-items: center;
+	padding: 10px 10px 5px 10px;
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	background: #ffffff;
+	font-size: 20px;
+    font-weight: 700;
+	i {
+		color: rgb(123, 125, 125);
+	}
+}
