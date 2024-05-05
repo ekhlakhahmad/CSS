@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 30px;
+	box-shadow: 1px 3px 19px 2px gray;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		li {
+			list-style-type: none;
+			margin: 10px;
+			cursor: pointer;
+		}
+	}
+}
+body {
+	background-color: #ffffff;
+}
+.parent {
+	margin: 20px auto;
+	background-color: green;
+	padding: 1em;
+	width: 60%;
+}
+.child {
+	background-color: white;
+	width: 80%;
+	padding: 1em;
+}
